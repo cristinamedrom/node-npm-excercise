@@ -1,7 +1,7 @@
 {
   "name": "npm-excercise-katas",
   "version": "1.0.0",
-  "description": "",
+  "description": "![Logotipo de The Bridge](https://user-images.githubusercontent.com/27650532/77754601-e8365180-702b-11ea-8bed-5bc14a43f869.png \"Logotipo de The Bridge\")",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -12,5 +12,9 @@
   "dependencies": {
     "jest": "^29.5.0",
     "lodash": "^4.17.21"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
 }
