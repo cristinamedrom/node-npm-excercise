@@ -1,11 +1,14 @@
 // Require the lodash library here in this line
+const _ = require('lodash');
 
 function sum(a, b) {
   // Use de add() function from lodash to sum the two numbers
+  console.log(_.sum([a, b]));
 }
 
 function filterFalsyValues(arr) {
   // Use the compact() function from lodash to filter the array
+
 }
 
 function differenceInArrays(firstArray, secondArray) {
