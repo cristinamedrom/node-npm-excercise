@@ -54,14 +54,15 @@ function sortByNamesAndCapitalizeFirstLetter(arr) {
   // Use the sortBy() function from lodash to sort the array by name
   // Use the capitalize() function from lodash to capitalize the first letter of each name
   const sortedArray = _.sortBy(arr, ['name']);
-  return _.capitalize(sortedArray);
+  const capitalizedArray = _.map(sortedArray, item => _.capitalize(item.name));
+  return capitalizedArray;
 }
 
 function transformToSnakeCaseAndAllCaps(arr) {
   // Use the snakeCase() function from lodash to convert the string to snake_case
   // Use the toUpper() function from lodash to convert the string to uppercase
-  const snakedArray = _.snakeCase(arr);
-  return _.toUpper(snakedArray);
+  const snakedArray = _.map(arr, item => _.toUpper(_.snakeCase(item)));
+  return snakedArray;
 }
 
 module.exports = {
